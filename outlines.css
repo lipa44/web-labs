@@ -26,6 +26,7 @@ ol {
   line-height: 1.5;
 }
 .tree span {
+  text-wrap: none;
   font-size: 1rem;
   color: #a8a8a8;
 }
@@ -35,6 +36,7 @@ ol {
 }
 .tree ul li {
   position: relative;
+  white-space: nowrap;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 15px;
