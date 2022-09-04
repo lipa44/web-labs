@@ -26,6 +26,8 @@ html {
 }
 
 .main {
+    display: flex;
+    align-items: center;
     flex-direction: column;
     flex: 1;
     margin-left: 10rem;
@@ -94,8 +96,7 @@ html {
     justify-content: space-around;
 }
 
-.code-snippet {
-    white-space: pre;
+#code-snippet {
     background-color: #eee;
     border: 1px solid #999;
     display: block;
@@ -104,9 +105,26 @@ html {
     overflow: scroll;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 1270px) {
+ pre {
+     align-self: center;
+ }
+}
+
+@media screen and (max-width: 1270px) {
+    pre {
+        align-self: normal;
+    }
+}
+
+
+@media screen and (min-width: 850px) {
     .icon {
         width: 2.5rem;
+    }
+
+    #main__intro {
+        font-size: medium;
     }
 
     .main {
@@ -128,9 +146,13 @@ html {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 850px) {
     .icon {
         width: 1.5rem;
+    }
+
+    #main__intro {
+        font-size: small;
     }
 
     .main {
