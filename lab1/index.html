@@ -14,6 +14,8 @@
     <meta property="twitter:card" content="summary_large_image"/>
 
     <link rel="stylesheet" type="text/css" href="styles/outlines.css">
+
+    <script src="scripts/getSourceCode.js"></script>
 </head>
 <body>
 
@@ -30,6 +32,7 @@
                     placeholder='Your github username'
                     spellcheck='false'
                     class='form-control'
+                    onchange="alert('Когда бекенд подрубим, тогда и поговорим)')"
             />
         </div>
 
@@ -40,12 +43,17 @@
         </div>
     </div>
 
-    <div class="main container">
-        <h1>Hello, body!</h1>
-        <h1>Hello, body!</h1>
-        <h1>Hello, body!</h1>
-        <h1>Hello, body!</h1>
-        <h1>Hello, body!</h1>
+    <div class="main">
+        <span>
+            This is my source code, fetched from
+            <a href="https://raw.githubusercontent.com/lipa44/web-labs/lab-1/lab1/index.html" target="_blank">
+                <i>https://raw.githubusercontent.com/lipa44/web-labs/lab-1/lab1/index.html</i>
+            </a> 😋
+        </span>
+
+        <pre>
+            <code class="code-snippet" id="code-snippet"></code>
+        </pre>
     </div>
 
     <div class="footer container">
