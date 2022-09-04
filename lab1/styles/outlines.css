@@ -103,6 +103,7 @@ html {
     border: 1px solid #999;
     display: block;
     padding: 2rem;
+    font-size: medium;
     border-radius: 1rem;
     overflow: scroll;
 }
@@ -127,6 +128,10 @@ pre {
 
     .container > h2 {
         font-size: larger;
+    }
+
+    .code-snippet {
+        font-size: 0.2vw;
     }
 
     .search-bar {
@@ -155,6 +160,10 @@ pre {
 
     .container > h2 {
         font-size: small;
+    }
+
+    .code-snippet {
+        font-size: 0.2rem;
     }
 
     .search-bar {
