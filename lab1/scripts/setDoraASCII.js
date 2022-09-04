@@ -210,5 +210,7 @@ function setDoraASCII() {
     codeSnippet.innerText = doraASCII;
     codeSnippet.style.display = "inline-block";
     codeSnippet.style.padding = "0";
-    codeSnippet.style.fontSize = "0.2rem"
+    codeSnippet.style.fontSize = window.screen.width > 850
+        ? "2px"
+        : "4px";
 }
