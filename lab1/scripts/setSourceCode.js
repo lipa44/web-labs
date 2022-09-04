@@ -12,6 +12,7 @@ function setSourceCode() {
         Http.responseText;
         mainIntro.style.display = "block";
         codeSnippet.style.display = "block";
+        codeSnippet.parentElement.style.alignSelf = "baseline";
         codeSnippet.style.padding = "2rem";
         codeSnippet.innerText = Http.responseText;
         codeSnippet.style.fontSize = "medium";

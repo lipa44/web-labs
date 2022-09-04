@@ -206,6 +206,7 @@ function setDoraASCII() {
     let mainIntro = document.getElementById("main__intro");
 
     mainIntro.style.display = "none";
+    codeSnippet.parentElement.style.alignSelf = "center";
     codeSnippet.innerText = doraASCII;
     codeSnippet.style.display = "inline-block";
     codeSnippet.style.padding = "0";
