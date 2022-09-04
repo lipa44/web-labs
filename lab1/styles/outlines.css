@@ -101,16 +101,53 @@ html {
     display: block;
     padding: 2rem;
     border-radius: 1rem;
+    overflow: scroll;
 }
 
 @media screen and (min-width: 500px) {
     .icon {
-        width: 3rem;
+        width: 2.5rem;
+    }
+
+    .main {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    .container > h2 {
+        font-size: larger;
+    }
+
+    .search-bar {
+        display: flex;
+    }
+
+    .custom-button {
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
     }
 }
 
 @media screen and (max-width: 500px) {
     .icon {
-        width: 2rem;
+        width: 1.5rem;
+    }
+
+    .main {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .container > h2 {
+        font-size: small;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .custom-button {
+        padding: 0.2rem 0.5rem;
+        font-size: small;
     }
 }
