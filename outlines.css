@@ -8,6 +8,13 @@ html {
     overflow: hidden;
 }
 
+ol {
+    border: black;
+    border-radius: 2rem;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 3rem;
+}
+
 .container {
     display: flex;
     align-items: center;
