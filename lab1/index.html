@@ -13,15 +13,16 @@
     />
     <meta property="twitter:card" content="summary_large_image"/>
 
-    <link rel="stylesheet" type="text/css" href="styles/outlines.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
 
     <script src="scripts/setSourceCode.js"></script>
     <script src="scripts/setDoraASCII.js"></script>
+    <script src="scripts/onSearchBarSubmit.js"></script>
 </head>
 <body>
 
 <div class="wrapper">
-    <div class="header">
+    <header class="header">
 
         <a href="../index.html">
             <img src="assets/img/home-icon.svg" style="cursor: pointer" alt="home">
@@ -30,10 +31,10 @@
         <div class="search-bar">
             <input
                     type='text'
-                    placeholder='Your github username'
+                    placeholder='Тишка санлоран висит на мне за сотку'
                     spellcheck='false'
                     class='form-control'
-                    onchange="alert('Когда бекенд подрубим, тогда и поговорим)')"
+                    onchange="onSearchBarSubmit(event)"
             />
         </div>
 
@@ -42,22 +43,22 @@
             <button class="custom-button source-code" id="source-code" onclick="setSourceCode()">Source code</button>
             <button class="custom-button" onclick="window.open('https://www.figma.com/file/EhHjMSYBQ4xSgbygUO2b65/lab-1?node-id=0%3A1')">Figma</button>
         </div>
-    </div>
+    </header>
 
-    <div class="main">
-        <span id="main__intro" style="display: none">
+    <main class="main">
+        <p id="main__intro" style="display: none">
             This is <strong>my source code</strong>, fetched from
             <a href="https://raw.githubusercontent.com/lipa44/web-labs/lab-1/lab1/index.html" target="_blank">
                 <i>https://raw.githubusercontent.com/lipa44/web-labs/lab-1/lab1/index.html</i>
             </a> 😋
-        </span>
+        </p>
 
         <pre>
             <code class="code-snippet" id="code-snippet">Hello, body!</code>
         </pre>
-    </div>
+    </main>
 
-    <div class="footer container">
+    <footer class="footer container">
         <div class="icons-bar">
             <a href="https://instagram.com/dirty_lipa" target="_blank" class="fa">
                 <img class="icon" src="assets/img/instagram-icon.svg" alt="instagram"/>
@@ -70,7 +71,7 @@
         <h2 style="margin-right: 2rem">
             (c) Libchenko Mikhail
         </h2>
-    </div>
+    </footer>
 
 </div>
 
