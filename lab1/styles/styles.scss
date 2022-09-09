@@ -4,7 +4,7 @@
 //  border: #666666 dashed;
 //}
 
-html {
+* {
   font-family: 'M PLUS 1 Code', sans-serif;
 }
 
@@ -221,11 +221,11 @@ body {
 
 @media screen and (max-width: 500px) {
   #page-load-stats {
-    font-size: xx-small;
+    font-size: x-small;
   }
 
   .container > h2 {
-    font-size: x-small;
+    font-size: small;
   }
 
   .icon {
