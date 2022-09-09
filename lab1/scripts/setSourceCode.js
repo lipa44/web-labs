@@ -1,5 +1,4 @@
 const url = "https://raw.githubusercontent.com/lipa44/web-labs/lab-1/lab1/index.html";
-const fetchPromise = fetch(url);
 
 setSourceCode = () =>
     fetch(url)
@@ -7,8 +6,6 @@ setSourceCode = () =>
             return response.text();
         })
         .then((res) => {
-            console.log(res);
-
             let codeSnippet = document.getElementById("main__code-snippet");
             let codeSnippet_code = document.getElementById("code-snippet__code");
             let mainMock = document.getElementById("main__body-mock");
