@@ -1,5 +1,5 @@
 const header = `
-    <a href="index.html" id="home-btn">
+    <a href="../../index.html" id="home-btn">
         <img src="../assets/img/home-icon.svg" style="cursor: pointer; width: 2rem" alt="home">
     </a>
 
@@ -13,18 +13,20 @@ const header = `
         />
     </div>
 
-    <div class="container">
-        <button class="custom-button dora-btn" id="dora-btn">
-            <a data-link="dora" href="dora.html">Dora ASCII</a>
+    <div class="container" id="buttons-bar">
+        <button class="custom-button dora" id="dora">
+            <a data-link="dora" href="dora.html">
+                Dora ASCII
+            </a>
         </button>
         <button class="custom-button source-code" id="source-code">
-            <a data-link="source-code" href="source-code.html">Source code</a>
+            <a data-link="source-code" href="source-code.html">
+                Source code
+            </a>
         </button>
-        <button class="custom-button">
-            <a data-link="main" target="_blank"
-               href="https://www.figma.com/file/EhHjMSYBQ4xSgbygUO2b65/lab-1?node-id=0%3A1"
-            >
-                Figma
+        <button class="custom-button index" id="index">
+            <a href="index.html">
+                Home
             </a>
         </button>
     </div>
