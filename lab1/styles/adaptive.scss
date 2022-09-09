@@ -16,7 +16,7 @@
     margin-right: 10rem;
   }
 
-  #page-load-stats {
+  #footer__page-load-stats {
     font-size: medium;
   }
 
@@ -57,7 +57,7 @@
     font-size: small;
   }
 
-  #page-load-stats {
+  #footer__page-load-stats {
     font-size: smaller;
   }
 
@@ -81,7 +81,7 @@
 }
 
 @media screen and (max-width: 500px) {
-  #page-load-stats {
+  #footer__page-load-stats {
     font-size: x-small;
   }
 

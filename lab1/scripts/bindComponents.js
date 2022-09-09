@@ -41,9 +41,9 @@ const footer = `
       </a>
     </div>
 
-    <p id="page-load-stats"></p>
+    <p id="footer__page-load-stats"></p>
 
-    <p style="margin-right: 2rem"><b>(c) Lipa</b></p>
+    <p id="footer__creds"><b>(c) Lipa</b></p>
 `
 
 document.getElementById("header").innerHTML = header;

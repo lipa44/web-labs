@@ -1,5 +1,5 @@
 window.onload = () => {
-    let loadStats = document.getElementById("page-load-stats");
+    let loadStats = document.getElementById("footer__page-load-stats");
 
     let loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
     let loadTimeInSec = loadTime / 1000;
