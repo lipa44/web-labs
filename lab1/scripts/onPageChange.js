@@ -1,6 +1,21 @@
+const routeNamesDict = [
+    {
+        route: "index.html",
+        page: "index"
+    },
+    {
+        route: "dora.html",
+        page: "dora"
+    },
+    {
+        route: "source-code.html",
+        page: "source-code"
+    },
+]
+
 window.addEventListener("load", () => {
     let cur_link = window.location.href;
-    let cur_page = cur_link.split("/").pop().replace(".html", "");
+    let cur_route = routeNamesDict.find(x => cur_link.includes(x.route));
 
     let btnContainer = document.getElementById("buttons-bar");
     let btns = btnContainer.getElementsByClassName("custom-button");
@@ -15,7 +30,6 @@ window.addEventListener("load", () => {
         }
     }
 
-    let curButton = document.getElementById(cur_page);
+    let curButton = document.getElementById(cur_route.page);
     curButton.className += " active";
-    console.log(curButton)
 })
