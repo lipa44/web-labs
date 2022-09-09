@@ -57,7 +57,7 @@ html {
   border-radius: 0.375rem;
 }
 
-.search-bar {
+.header__search-bar {
   display: flex;
   justify-content: center;
   flex: 1 1 auto;
@@ -91,25 +91,29 @@ html {
   opacity: 0.7;
 }
 
-.icons-bar {
+.footer__icons-bar {
   margin-left: 2rem;
   display: flex;
   justify-content: space-around;
 }
 
-.main-mock {
+.main__body-mock {
   background-color: #eee;
   border: 1px solid #999;
   display: block;
   padding: 2rem;
   border-radius: 1rem;
+
+  & b {
+    text-decoration: line-through;
+  }
 }
 
 #home-btn:hover {
   opacity: 0.7;
 }
 
-#code-snippet {
+#main__code-snippet {
   background-color: #eee;
   border: 1px solid #999;
   padding: 2rem;
@@ -129,7 +133,7 @@ html {
     font-size: medium;
   }
 
-  .ascii-art {
+  .main__ascii-art {
     font-size: 2px;
   }
 
@@ -142,11 +146,11 @@ html {
     font-size: larger;
   }
 
-  .code-snippet {
+  .main__code-snippet {
     font-size: 4px;
   }
 
-  .search-bar {
+  .header__search-bar {
     display: flex;
   }
 
@@ -174,15 +178,15 @@ html {
     font-size: small;
   }
 
-  .ascii-art {
+  .main__ascii-art {
     font-size: 2px;
   }
 
-  .code-snippet {
+  .main__code-snippet {
     font-size: 2px;
   }
 
-  .search-bar {
+  .header__search-bar {
     display: none;
   }
 

@@ -202,9 +202,9 @@ OOOOOOO0OOOOOOOOOOOOOkkOOOOOOOOOO00OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO00O0000OOO0OO
 `
 
 function setDoraASCII() {
-    let codeSnippet = document.getElementById("code-snippet");
-    let mainMock = document.getElementById("main-mock");
-    let asciiArt = document.getElementById("ascii-art");
+    let codeSnippet = document.getElementById("main__code-snippet");
+    let mainMock = document.getElementById("main__body-mock");
+    let asciiArt = document.getElementById("main__ascii-art");
     let mainIntro = document.getElementById("main__intro");
 
     mainIntro.style.display = "none";

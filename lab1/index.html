@@ -28,7 +28,7 @@
             <img src="assets/img/home-icon.svg" style="cursor: pointer; width: 2rem" alt="home">
         </a>
 
-        <div class="search-bar">
+        <div class="header__search-bar">
             <input
                     type='text'
                     placeholder='Tishka San-Loran visit na mne za sotku'
@@ -38,7 +38,7 @@
             />
         </div>
 
-        <div style="display: flex; justify-content: center;">
+        <div class="container">
             <button class="custom-button dora-btn" id="dora-btn" onclick="setDoraASCII()">Dora ASCII</button>
             <button class="custom-button source-code" id="source-code" onclick="setSourceCode()">Source code</button>
             <button class="custom-button"
@@ -55,20 +55,20 @@
             </a> 😋
         </p>
 
-        <p class="main-mock" id="main-mock">Hello, body!</p>
+        <p class="main__body-mock" id="main__body-mock">Hello, <b>body</b>!</p>
 
-        <div class="code-snippet" id="code-snippet" style="display: none">
+        <div class="main__code-snippet" id="main__code-snippet" style="display: none">
             <code class="code-snippet__code" id="code-snippet__code"></code>
         </div>
 
-        <pre class="ascii-art" id="ascii-art" style="display: none">
+        <pre class="main__ascii-art" id="main__ascii-art" style="display: none">
             <code></code>
         </pre>
 
     </main>
 
     <footer class="footer container">
-        <div class="icons-bar">
+        <div class="footer__icons-bar">
             <a href="https://instagram.com/dirty_lipa" target="_blank" class="fa">
                 <img class="icon" src="assets/img/instagram-icon.svg" alt="instagram"/>
             </a>
