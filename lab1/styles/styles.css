@@ -115,7 +115,6 @@ html {
   font-size: medium;
   border-radius: 1rem;
   overflow: scroll;
-  align-self: center;
   white-space: break-spaces;
 }
 
@@ -124,7 +123,7 @@ html {
     width: 2.5rem;
   }
   #main__intro {
-    font-size: medium;
+    font-size: small;
   }
   .ascii-art {
     font-size: 2px;
@@ -138,6 +137,7 @@ html {
   }
   .code-snippet {
     font-size: 4px;
+    align-self: center;
   }
   .search-bar {
     display: flex;
@@ -166,6 +166,7 @@ html {
   }
   .code-snippet {
     font-size: 2px;
+    align-self: baseline;
   }
   .search-bar {
     display: none;
