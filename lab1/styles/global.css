@@ -5,4 +5,8 @@ input {
   font-family: "M PLUS 1 Code", sans-serif;
 }
 
+a {
+  color: inherit;
+}
+
 /*# sourceMappingURL=global.css.map */

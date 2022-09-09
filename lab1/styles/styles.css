@@ -88,6 +88,7 @@ body {
 
 .active {
   box-shadow: -0.5em 0 1em gray;
+  background: rgba(169, 169, 169, 0.5);
 }
 
 .fa {
