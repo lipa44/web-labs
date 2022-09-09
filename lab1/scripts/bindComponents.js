@@ -34,10 +34,10 @@ const header = `
 const footer = `
     <div class="footer__icons-bar">
       <a href="https://instagram.com/dirty_lipa" target="_blank" class="fa">
-        <img class="icon" src="../assets/img/instagram-icon.svg" alt="instagram"/>
+        <img class="icon" src="../assets/img/ins-icon.svg" alt="inst"/>
       </a>
       <a href="https://t.me/dirty_lipa" target="_blank" class="fa">
-        <img class="icon" src="../assets/img/telegram-icon.svg" alt="telegram"/>
+        <img class="icon" src="../assets/img/tg-icon.svg" alt="tg"/>
       </a>
     </div>
 
