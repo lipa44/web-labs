@@ -144,7 +144,10 @@ body {
   font-size: medium;
   border-radius: $smaller-radius;
   overflow: scroll;
-  white-space: break-spaces;
   box-shadow: $gray-shadow;
+  white-space: nowrap;
+  align-self: center;
+  display: flex;
+  max-width: 80vw;
 }
 

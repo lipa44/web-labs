@@ -9,18 +9,14 @@
     font-size: 2px;
   }
   .main {
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
   #footer__page-load-stats {
     font-size: medium;
   }
   .container > h2 {
     font-size: larger;
-  }
-  .main__code-snippet {
-    font-size: 4px;
-    align-self: center;
   }
   .header__search-bar {
     display: flex;
@@ -49,10 +45,6 @@
   }
   .main__ascii-art {
     font-size: 2px;
-  }
-  .main__code-snippet {
-    font-size: 2px;
-    align-self: baseline;
   }
   .header__search-bar {
     display: none;

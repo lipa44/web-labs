@@ -134,8 +134,11 @@ body {
   font-size: medium;
   border-radius: 1rem;
   overflow: scroll;
-  white-space: break-spaces;
   box-shadow: -0.5em 0 1em gray;
+  white-space: nowrap;
+  align-self: center;
+  display: flex;
+  max-width: 80vw;
 }
 
 /*# sourceMappingURL=styles.css.map */
