@@ -53,6 +53,7 @@ body {
 }
 
 .form-control {
+  text-overflow: ellipsis;
   width: 60%;
   line-height: 1.5;
   font-family: 'M PLUS 1 Code', sans-serif;
