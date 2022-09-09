@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Dora</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Lipa's personal portfolio site!"/>
+  <meta property="og:description" content="This is my portfolio site written for web-programming subjectt"/>
+  <meta
+          property="og:image"
+          content="https://avatars.githubusercontent.com/u/82240296?v=4"
+  />
+  <meta property="twitter:card" content="summary_large_image"/>
+
+  <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+  <link rel="stylesheet" type="text/css" href="../styles/adaptive.css">
+
+  <script src="../scripts/setDoraASCII.js"></script>
+  <script src="../scripts/onSearchBarSubmit.js"></script>
+  <script src="../scripts/onNameSubmitted.js"></script>
+  <script src="../scripts/onPageLoad.js"></script>
+  <script src="../scripts/onPageChange.js"></script>
+  <script defer src="../scripts/bindComponents.js"></script>
+</head>
+<body onload="setDoraASCII()">
+
+<div class="wrapper">
+  <header class="header" id="header"></header>
+
+  <main class="main">
+    <pre class="main__ascii-art" id="main__ascii-art" style="display: inline-block">
+      <code></code>
+    </pre>
+  </main>
+
+  <footer class="footer container" id="footer"></footer>
+</div>
+
+</body>
+</html>

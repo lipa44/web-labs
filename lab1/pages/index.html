@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Lipa's personal portfolio site!"/>
+    <meta property="og:description" content="This is my portfolio site written for web-programming subjectt"/>
+    <meta
+            property="og:image"
+            content="https://avatars.githubusercontent.com/u/82240296?v=4"
+    />
+    <meta property="twitter:card" content="summary_large_image"/>
+
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/adaptive.css">
+
+    <script src="../scripts/onSearchBarSubmit.js"></script>
+    <script src="../scripts/onNameSubmitted.js"></script>
+    <script src="../scripts/onPageLoad.js"></script>
+    <script src="../scripts/onPageChange.js"></script>
+    <script defer src="../scripts/bindComponents.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+    <header class="header" id="header"></header>
+
+    <main class="main">
+        <p id="main__intro" style="display: none">
+            This is <strong>my source code</strong>, fetched from
+            <a href="https://raw.githubusercontent.com/lipa44/web-labs/lab-1/lab1/index.html" target="_blank">
+                <i>https://raw.githubusercontent.com/lipa44/web-labs/lab-1/lab1/index.html</i>
+            </a> 😋
+        </p>
+
+        <p class="main__body-mock" id="main__body-mock">
+            Hello,
+            <input
+                    style="border: none; border-radius: 0.375rem;"
+                    type="text"
+                    spellcheck='false'
+                    placeholder="webmakakich"
+                    onchange="onNameSubmitted(event)"
+            >!
+        </p>
+
+        <pre class="main__ascii-art" id="main__ascii-art" style="display: none">
+            <code></code>
+        </pre>
+    </main>
+
+    <footer class="footer container" id="footer"></footer>
+</div>
+
+</body>
+</html>

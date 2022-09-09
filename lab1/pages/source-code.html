@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Source code</title>
+
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/adaptive.css">
+
+    <script src="../scripts/setSourceCode.js"></script>
+    <script src="../scripts/onSearchBarSubmit.js"></script>
+    <script src="../scripts/onNameSubmitted.js"></script>
+    <script src="../scripts/onPageLoad.js"></script>
+    <script src="../scripts/onPageChange.js"></script>
+    <script defer src="../scripts/bindComponents.js"></script>
+</head>
+<body onload="setSourceCode()">
+<div class="wrapper">
+    <header class="header" id="header"></header>
+
+    <main class="main">
+        <p id="main__intro" style="display: block">
+            This is <strong>my source code</strong>, fetched from
+            <a href="https://raw.githubusercontent.com/lipa44/web-labs/lab-1/lab1/index.html" target="_blank">
+                <i>https://raw.githubusercontent.com/lipa44/web-labs/lab-1/lab1/index.html</i>
+            </a> 😋
+        </p>
+
+        <div class="main__code-snippet" style="display: flex" id="main__code-snippet">
+            <code class="code-snippet__code" id="code-snippet__code">
+            </code>
+        </div>
+    </main>
+
+    <footer class="footer container" id="footer"></footer>
+</div>
+</body>
+</html>

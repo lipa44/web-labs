@@ -6,16 +6,6 @@ setSourceCode = () =>
             return response.text();
         })
         .then((res) => {
-            let codeSnippet = document.getElementById("main__code-snippet");
-            let codeSnippet_code = document.getElementById("code-snippet__code");
-            let mainMock = document.getElementById("main__body-mock");
-            let asciiArt = document.getElementById("main__ascii-art");
-            let mainIntro = document.getElementById("main__intro");
-
-            mainMock.style.display = "none";
-            asciiArt.style.display = "none";
-
-            mainIntro.style.display = "block";
-            codeSnippet.style.display = "flex";
-            codeSnippet_code.innerText = res;
+            let codeSnippet = document.getElementById("code-snippet__code");
+            codeSnippet.innerText = res;
         })
