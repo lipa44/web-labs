@@ -24,14 +24,14 @@
 <div class="wrapper">
     <header class="header">
 
-        <a href="../index.html">
-            <img src="assets/img/home-icon.svg" style="cursor: pointer" alt="home">
+        <a href="../index.html" id="home-btn">
+            <img src="assets/img/home-icon.svg" style="cursor: pointer; width: 2rem" alt="home">
         </a>
 
         <div class="search-bar">
             <input
                     type='text'
-                    placeholder='Тишка санлоран висит на мне за сотку'
+                    placeholder='Tishka San-Loran visit na mne za sotku'
                     spellcheck='false'
                     class='form-control'
                     onchange="onSearchBarSubmit(event)"
@@ -41,7 +41,9 @@
         <div style="display: flex; justify-content: center;">
             <button class="custom-button dora-btn" id="dora-btn" onclick="setDoraASCII()">Dora ASCII</button>
             <button class="custom-button source-code" id="source-code" onclick="setSourceCode()">Source code</button>
-            <button class="custom-button" onclick="window.open('https://www.figma.com/file/EhHjMSYBQ4xSgbygUO2b65/lab-1?node-id=0%3A1')">Figma</button>
+            <button class="custom-button"
+                    onclick="window.open('https://www.figma.com/file/EhHjMSYBQ4xSgbygUO2b65/lab-1?node-id=0%3A1')">Figma
+            </button>
         </div>
     </header>
 
@@ -53,9 +55,16 @@
             </a> 😋
         </p>
 
-        <pre>
-            <code class="code-snippet" id="code-snippet">Hello, body!</code>
+        <p class="main-mock" id="main-mock">Hello, body!</p>
+
+        <div class="code-snippet" id="code-snippet" style="display: none">
+            <code class="code-snippet__code" id="code-snippet__code"></code>
+        </div>
+
+        <pre class="ascii-art" id="ascii-art" style="display: none">
+            <code></code>
         </pre>
+
     </main>
 
     <footer class="footer container">

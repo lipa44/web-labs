@@ -28,10 +28,9 @@ html {
 .main {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   flex: 1;
-  margin-left: 10rem;
-  margin-right: 10rem;
   height: 60%;
   overflow: scroll;
 }
@@ -98,18 +97,27 @@ html {
   justify-content: space-around;
 }
 
-#code-snippet {
+.main-mock {
   background-color: #eee;
   border: 1px solid #999;
   display: block;
   padding: 2rem;
+  border-radius: 1rem;
+}
+
+#home-btn:hover {
+  opacity: 0.7;
+}
+
+#code-snippet {
+  background-color: #eee;
+  border: 1px solid #999;
+  padding: 2rem;
   font-size: medium;
   border-radius: 1rem;
   overflow: scroll;
-}
-
-pre {
   align-self: center;
+  white-space: break-spaces;
 }
 
 @media screen and (min-width: 850px) {
@@ -119,6 +127,10 @@ pre {
 
   #main__intro {
     font-size: medium;
+  }
+
+  .ascii-art {
+    font-size: 2px;
   }
 
   .main {
@@ -160,6 +172,10 @@ pre {
 
   .container > h2 {
     font-size: small;
+  }
+
+  .ascii-art {
+    font-size: 2px;
   }
 
   .code-snippet {

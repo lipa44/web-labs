@@ -203,14 +203,14 @@ OOOOOOO0OOOOOOOOOOOOOkkOOOOOOOOOO00OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO00O0000OOO0OO
 
 function setDoraASCII() {
     let codeSnippet = document.getElementById("code-snippet");
+    let mainMock = document.getElementById("main-mock");
+    let asciiArt = document.getElementById("ascii-art");
     let mainIntro = document.getElementById("main__intro");
 
     mainIntro.style.display = "none";
-    codeSnippet.parentElement.style.alignSelf = "center";
-    codeSnippet.innerText = doraASCII;
-    codeSnippet.style.display = "inline-block";
-    codeSnippet.style.padding = "0";
-    codeSnippet.style.fontSize = window.screen.width > 850
-        ? "2px"
-        : "4px";
+    codeSnippet.style.display = "none";
+    mainMock.style.display = "none";
+
+    asciiArt.style.display = "inline-block";
+    asciiArt.innerText = doraASCII;
 }
