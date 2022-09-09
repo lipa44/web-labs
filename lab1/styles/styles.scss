@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code&display=swap');
 
 //* {
-//  border: #666666 solid;
+//  border: #666666 dashed;
 //}
 
 html {
@@ -39,7 +39,6 @@ body {
   justify-content: center;
   flex-direction: column;
   flex: 1;
-  height: 60%;
   overflow: scroll;
 }
 
@@ -134,7 +133,6 @@ body {
   font-size: medium;
   border-radius: 1rem;
   overflow: scroll;
-  align-self: center;
   white-space: break-spaces;
 }
 
@@ -162,6 +160,7 @@ body {
 
   .main__code-snippet {
     font-size: 4px;
+    align-self: center;
   }
 
   .header__search-bar {
@@ -198,6 +197,7 @@ body {
 
   .main__code-snippet {
     font-size: 2px;
+    align-self: baseline;
   }
 
   .header__search-bar {
