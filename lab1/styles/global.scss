@@ -11,3 +11,12 @@ input
 a {
   color: inherit;
 }
+
+input {
+  border: none;
+  border-radius: 0.375rem;
+
+  &::placeholder {
+    text-align: center;
+  }
+}

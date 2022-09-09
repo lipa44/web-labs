@@ -16,24 +16,27 @@
     <script defer src="../scripts/bindComponents.js"></script>
 </head>
 <body onload="setSourceCode()">
-<div class="wrapper">
-    <header class="header" id="header"></header>
 
-    <main class="main">
-        <p id="main__intro" style="display: block">
-            This is <strong>my source code</strong>, fetched from
-            <a href="https://raw.githubusercontent.com/lipa44/web-labs/lab-1/lab1/index.html" target="_blank">
-                <i>https://raw.githubusercontent.com/lipa44/web-labs/lab-1/lab1/index.html</i>
-            </a> 😋
-        </p>
+    <div class="wrapper">
+        <header class="header" id="header"></header>
 
-        <div class="main__code-snippet" style="display: flex" id="main__code-snippet">
-            <code class="code-snippet__code" id="code-snippet__code">
-            </code>
-        </div>
-    </main>
+        <main class="main">
+            <p id="main__intro" style="display: block">
+                It's the
+                <a href="https://raw.githubusercontent.com/lipa44/web-labs/lab-1/lab1/index.html" target="_blank">
+                    <i>actual code</i>
+                </a>
+                of the current page, fetched from repo 😋
+            </p>
 
-    <footer class="footer container" id="footer"></footer>
-</div>
+            <div class="main__code-snippet" style="display: flex" id="main__code-snippet">
+                <code class="code-snippet__code" id="code-snippet__code">
+                </code>
+            </div>
+        </main>
+
+        <footer class="footer container" id="footer"></footer>
+    </div>
+
 </body>
 </html>
