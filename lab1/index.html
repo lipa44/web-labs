@@ -18,6 +18,7 @@
     <script src="scripts/setSourceCode.js"></script>
     <script src="scripts/setDoraASCII.js"></script>
     <script src="scripts/onSearchBarSubmit.js"></script>
+    <script src="scripts/onNameSubmitted.js"></script>
     <script src="scripts/onPageLoad.js"></script>
 </head>
 <body>
@@ -63,7 +64,7 @@
                     type="text"
                     spellcheck='false'
                     placeholder="webmakakich"
-                    onchange="alert(`Hello, ${event.target.value}`)"
+                    onchange="onNameSubmitted(event)"
             >!
         </p>
 
