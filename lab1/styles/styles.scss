@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code&display=swap');
+@import "constants";
 
 //* {
 //  border: #666666 dashed;
 //}
-
-* {
-  font-family: 'M PLUS 1 Code', sans-serif;
-}
 
 body {
   margin: 0;
@@ -48,7 +45,7 @@ body {
   align-items: center;
   margin: 3rem 3rem 2rem;
   border-radius: 1rem;
-  background: rgba(199, 199, 199, 0.3);
+  background: $background-grey;
 }
 
 .form-control {
@@ -56,7 +53,7 @@ body {
   width: 60%;
   line-height: 1.5;
   font-family: 'M PLUS 1 Code', sans-serif;
-  background-color: rgba(225, 225, 225, 0.5);
+  background-color: $background-grey;
   border: 1px solid #ced4da;
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   padding: 0.5rem 1rem;
@@ -93,8 +90,12 @@ body {
   }
 }
 
+#footer__creds {
+  margin-right: 2rem
+}
+
 .active {
-  box-shadow: -0.5em 0 1em gray;
+  box-shadow: $gray-shadow;
 }
 
 .fa {
@@ -136,13 +137,13 @@ body {
 }
 
 #main__code-snippet {
-  background-color: #eee;
+  background-color: $background-grey;
   border: 1px solid #999;
   padding: 2rem;
   font-size: medium;
   border-radius: 1rem;
   overflow: scroll;
   white-space: break-spaces;
-  box-shadow: -1em 0 .5em gray;
+  box-shadow: $gray-shadow;
 }
 
