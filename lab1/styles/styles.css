@@ -3,6 +3,14 @@ body {
   margin: 0;
 }
 
+#main__ascii-art {
+  display: flex;
+  justify-content: center;
+  overflow-x: scroll;
+  white-space: pre;
+  width: 100%;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;

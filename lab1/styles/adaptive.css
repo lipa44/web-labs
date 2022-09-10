@@ -6,7 +6,7 @@
     font-size: medium;
   }
   .main__ascii-art {
-    font-size: 2px;
+    font-size: 4px;
   }
   .main {
     margin-left: 5rem;
@@ -44,7 +44,7 @@
     font-size: smaller;
   }
   .main__ascii-art {
-    font-size: 2px;
+    font-size: 3px;
   }
   .header__search-bar {
     display: none;
