@@ -6,7 +6,6 @@ body {
 #main__ascii-art {
   display: flex;
   justify-content: center;
-  overflow-x: scroll;
   white-space: pre;
   width: 100%;
 }

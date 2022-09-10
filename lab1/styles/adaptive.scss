@@ -58,6 +58,7 @@
 
   .main__ascii-art {
     font-size: 3px;
+    overflow-x: scroll;
   }
 
   .header__search-bar {
@@ -72,6 +73,7 @@
   .main__code-snippet {
     padding: 1rem!important;
     max-width: 70vw!important;
+    overflow-x: scroll;
   }
 }
 
@@ -99,6 +101,7 @@
 
   .main__ascii-art {
     font-size: 3px;
+    overflow-x: scroll;
   }
 
   .header__search-bar {
@@ -107,6 +110,7 @@
 
   .main__code-snippet {
     font-size: smaller;
+    overflow-x: scroll;
   }
 
   .custom-button {

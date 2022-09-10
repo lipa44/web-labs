@@ -45,6 +45,7 @@
   }
   .main__ascii-art {
     font-size: 3px;
+    overflow-x: scroll;
   }
   .header__search-bar {
     display: none;
@@ -56,6 +57,7 @@
   .main__code-snippet {
     padding: 1rem !important;
     max-width: 70vw !important;
+    overflow-x: scroll;
   }
 }
 @media screen and (orientation: portrait) {
@@ -77,12 +79,14 @@
   }
   .main__ascii-art {
     font-size: 3px;
+    overflow-x: scroll;
   }
   .header__search-bar {
     display: none;
   }
   .main__code-snippet {
     font-size: smaller;
+    overflow-x: scroll;
   }
   .custom-button {
     padding: 0.2rem 0.5rem;
