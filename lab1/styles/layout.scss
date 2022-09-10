@@ -1,0 +1,265 @@
+$breakpoint-m: 48em;
+
+// WIDTH
+
+.width-1 {
+  grid-column: span 1;
+}
+
+.width-2 {
+  grid-column: span 2;
+}
+
+.width-3 {
+  grid-column: span 3;
+}
+
+.width-4 {
+  grid-column: span 4;
+}
+
+.width-5 {
+  grid-column: span 5;
+}
+
+.width-6 {
+  grid-column: span 6;
+}
+
+.width-7 {
+  grid-column: span 7;
+}
+
+.width-8 {
+  grid-column: span 8;
+}
+
+.width-9 {
+  grid-column: span 9;
+}
+
+.width-10 {
+  grid-column: span 10;
+}
+
+.width-11 {
+  grid-column: span 11;
+}
+
+.width-12 {
+  grid-column: span 12;
+}
+
+.width-1\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-column: span 1;
+  }
+}
+
+.width-2\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-column: span 2;
+  }
+}
+
+.width-3\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-column: span 3;
+  }
+}
+
+.width-4\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-column: span 4;
+  }
+}
+
+.width-5\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-column: span 5;
+  }
+}
+
+.width-6\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-column: span 6;
+  }
+}
+
+.width-7\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-column: span 7;
+  }
+}
+
+.width-8\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-column: span 8;
+  }
+}
+
+.width-9\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-column: span 9;
+  }
+}
+
+.width-10\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-column: span 10;
+  }
+}
+
+.width-11\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-column: span 11;
+  }
+}
+
+.width-12\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-column: span 12;
+  }
+}
+
+// HEIGHT
+
+.height-1 {
+  grid-row: span 1;
+}
+
+.height-2 {
+  grid-row: span 2;
+}
+
+.height-3 {
+  grid-row: span 3;
+}
+
+.height-4 {
+  grid-row: span 4;
+}
+
+.height-5 {
+  grid-row: span 5;
+}
+
+.height-6 {
+  grid-row: span 6;
+}
+
+.height-7 {
+  grid-row: span 7;
+}
+
+.height-8 {
+  grid-row: span 8;
+}
+
+.height-9 {
+  grid-row: span 9;
+}
+
+.height-10 {
+  grid-row: span 10;
+}
+
+.height-11 {
+  grid-row: span 11;
+}
+
+.height-12 {
+  grid-row: span 12;
+}
+
+.height-13 {
+  grid-row: span 13;
+}
+
+.height-14 {
+  grid-row: span 14;
+}
+
+.height-15 {
+  grid-row: span 15;
+}
+
+.height-16 {
+  grid-row: span 16;
+}
+
+.height-17 {
+  grid-row: span 17;
+}
+
+.height-18 {
+  grid-row: span 18;
+}
+
+.height-19 {
+  grid-row: span 19;
+}
+
+.height-20 {
+  grid-row: span 20;
+}
+
+.height-1\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-row: span 1;
+  }
+}
+
+.height-2\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-row: span 2;
+  }
+}
+
+.height-3\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-row: span 3;
+  }
+}
+
+.height-4\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-row: span 4;
+  }
+}
+
+.height-5\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-row: span 5;
+  }
+}
+
+.height-6\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-row: span 6;
+  }
+}
+
+.height-7\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-row: span 7;
+  }
+}
+
+.height-8\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-row: span 8;
+  }
+}
+
+.height-9\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-row: span 9;
+  }
+}
+
+.height-10\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-row: span 10;
+  }
+}

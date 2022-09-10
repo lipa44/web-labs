@@ -68,9 +68,14 @@
     padding: 0.2rem 0.5rem;
     font-size: small;
   }
+
+  .main__code-snippet {
+    padding: 1rem!important;
+    max-width: 70vw!important;
+  }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (orientation: portrait) {
   #footer__page-load-stats {
     font-size: x-small;
   }
@@ -98,6 +103,10 @@
 
   .header__search-bar {
     display: none;
+  }
+
+  .main__code-snippet {
+    font-size: smaller;
   }
 
   .custom-button {

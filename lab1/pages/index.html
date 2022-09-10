@@ -16,19 +16,23 @@
     <link rel="stylesheet" type="text/css" href="../styles/styles.css">
     <link rel="stylesheet" type="text/css" href="../styles/adaptive.css">
     <link rel="stylesheet" type="text/css" href="../styles/global.css">
+    <link rel="stylesheet" type="text/css" href="../styles/layout.css">
 
     <script src="../scripts/onSearchBarSubmit.js"></script>
     <script src="../scripts/onNameSubmitted.js"></script>
-    <script src="../scripts/onPageLoad.js"></script>
-    <script src="../scripts/onPageChange.js"></script>
-    <script defer src="../scripts/bindComponents.js"></script>
+    <script src="../scripts/loadStats.js"></script>
+    <script src="../scripts/currentPageHandler.js"></script>
+
+    <!--  Components  -->
+    <script src="../scripts/components-binding/header.js"></script>
+    <script src="../scripts/components-binding/footer.js"></script>
 </head>
 <body>
 
     <div class="wrapper">
-        <header class="header" id="header"></header>
+        <header class="header width-12 height-2" id="header"></header>
 
-        <main class="main">
+        <main class="main width-12 height-16">
 
             <p class="main__body-mock" id="main__body-mock">
                 Hello,
@@ -42,7 +46,7 @@
 
         </main>
 
-        <footer class="footer container" id="footer"></footer>
+        <footer class="footer container width-12 height-2" id="footer"></footer>
     </div>
 
 </body>
