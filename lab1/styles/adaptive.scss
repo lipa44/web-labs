@@ -60,9 +60,6 @@
     font-size: 3px;
   }
 
-  .main__code-snippet {
-  }
-
   .header__search-bar {
     display: none;
   }
@@ -85,4 +82,33 @@
   .icon {
     width: 1rem;
   }
+
+  #main__intro {
+    font-size: small;
+  }
+
+  .main {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .main__ascii-art {
+    font-size: 3px;
+  }
+
+  .header__search-bar {
+    display: none;
+  }
+
+  .custom-button {
+    padding: 0.2rem 0.5rem;
+    font-size: small;
+  }
 }
+
+//
+//@media screen and (orientation: portrait) {
+//  .sidebar {
+//    width: 500px;
+//  }
+//}
