@@ -3,5 +3,6 @@ fetch('../components/header.html')
     .then(text => {
         let headerElem = document.getElementById("header");
         headerElem.innerHTML = text;
+        updateCurrentPageButton()
     })
     .catch((reason) => console.log(reason))
