@@ -1,0 +1,23 @@
+@import "constants";
+
+p,
+span,
+a,
+button,
+input
+{
+  font-family: $base-font;
+}
+
+a {
+  color: inherit;
+}
+
+input {
+  border: none;
+  border-radius: 0.375rem;
+
+  &::placeholder {
+    text-align: center;
+  }
+}
