@@ -71,6 +71,7 @@ body {
 }
 
 .custom-button {
+  display: flex;
   white-space: nowrap;
   color: black;
   padding: 0.375rem 0.75rem;
@@ -92,6 +93,7 @@ body {
 
 #footer__creds {
   margin-right: 2rem;
+  white-space: nowrap;
 }
 
 .active {
