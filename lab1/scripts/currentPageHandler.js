@@ -1,23 +1,23 @@
 // TODO: fix when initializing page
 
-const routeNamesDict = [
+const routes = [
     {
         route: "index.html",
-        page: "index"
+        pageUri: "index"
     },
     {
         route: "dora.html",
-        page: "dora"
+        pageUri: "dora"
     },
     {
         route: "source-code.html",
-        page: "source-code"
+        pageUri: "source-code"
     },
 ]
 
 updateCurrentPageButton = () => {
     let cur_link = document.URL;
-    let cur_route = routeNamesDict.find(x => cur_link.includes(x.route));
+    let cur_route = routes.find(x => cur_link.includes(x.route));
 
     let btnContainer = document.getElementById("buttons-bar");
     let btns = btnContainer.getElementsByClassName("custom-button");
@@ -31,7 +31,7 @@ updateCurrentPageButton = () => {
         }
     }
 
-    let curButton = document.getElementById(cur_route.page);
+    let curButton = document.getElementById(cur_route.pageUri);
     curButton.className += " active";
 
     loadStats()
