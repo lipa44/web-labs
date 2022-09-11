@@ -201,16 +201,7 @@ OOOOOOOOOOO0OOOOOOOOOkOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO00000OOOO
 OOOOOOO0OOOOOOOOOOOOOkkOOOOOOOOOO00OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO00O0000OOO0OO00000000000000000000000000000000000000O0000000OOOOOOOOOO0OOOOOOOOOOOOOOOOOOOOOOOO00000000k;........................................................lKK0000000000000o,,,',xKO:. .:lccccccc;',:::cccc,,:ccccll;......':cclc'........;::cclooddxxxxxxdooodddddddooooddddxddoooooooooooollooooooooooxkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
 `
 
-function setDoraASCII() {
-    let codeSnippet = document.getElementById("main__code-snippet");
-    let mainMock = document.getElementById("main__body-mock");
+setDoraASCII = () => {
     let asciiArt = document.getElementById("main__ascii-art");
-    let mainIntro = document.getElementById("main__intro");
-
-    mainIntro.style.display = "none";
-    codeSnippet.style.display = "none";
-    mainMock.style.display = "none";
-
-    asciiArt.style.display = "inline-block";
     asciiArt.innerText = doraASCII;
 }
