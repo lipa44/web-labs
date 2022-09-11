@@ -37,6 +37,9 @@
     margin-left: 2rem;
     margin-right: 2rem;
   }
+  .footer {
+    margin: 1rem;
+  }
   .container > h2 {
     font-size: small;
   }
