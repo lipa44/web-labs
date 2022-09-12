@@ -13,7 +13,7 @@
 }
 
 .wrapper {
-  background: $secondary-color;
+  background: $background-color;
   display: grid;
   grid-template-columns: repeat(10, [col-start] 1fr);
   grid-template-rows: repeat(20, [row-start] 5vh);
