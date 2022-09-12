@@ -1,3 +1,4 @@
+// Desktop
 @media screen and (min-width: 850px) {
   .icon {
     width: 2.5rem;
@@ -32,8 +33,13 @@
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
   }
+
+  .main__code-snippet {
+    overflow-x: auto;
+  }
 }
 
+// Tablets
 @media screen and (max-width: 850px) {
   .icon {
     width: 1.5rem;
@@ -86,6 +92,7 @@
   }
 }
 
+// Mobiles
 @media screen and (orientation: portrait) and (max-width: 500px) {
   .footer__page-load-stats {
     font-size: x-small;
