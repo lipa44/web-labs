@@ -140,7 +140,7 @@
   padding: 2rem;
   font-size: medium;
   border-radius: 1rem;
-  overflow: scroll;
+  overflow: auto;
   box-shadow: -0.5em 0 1em gray;
   white-space: pre;
   align-self: center;
