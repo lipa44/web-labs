@@ -61,6 +61,7 @@
     font-size: small;
   }
   .main__code-snippet {
+    font-size: small !important;
     padding: 1rem !important;
     max-width: 70vw !important;
     overflow-x: scroll;
@@ -94,7 +95,7 @@
     display: none;
   }
   .main__code-snippet {
-    font-size: smaller;
+    font-size: x-small !important;
     overflow-x: scroll;
   }
   .custom-button {
