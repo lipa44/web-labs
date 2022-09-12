@@ -1,5 +1,3 @@
-// TODO: fix when initializing page
-
 const routes = [
     {
         route: "index.html",
@@ -16,8 +14,8 @@ const routes = [
 ]
 
 updateCurrentPageButton = () => {
-    let cur_link = document.URL;
-    let cur_route = routes.find(x => cur_link.includes(x.route));
+    const cur_link = document.URL;
+    const cur_route = routes.find(x => cur_link.includes(x.route));
 
     let btnContainer = document.getElementById("buttons-bar");
     let btns = btnContainer.getElementsByClassName("custom-button");
@@ -25,7 +23,6 @@ updateCurrentPageButton = () => {
     for (let i = 0; i < btns.length; i++) {
         let current = document.getElementsByClassName("active");
 
-        // If there's no active class
         if (current.length > 0) {
             current[0].className = current[0].className.replace(" active", "");
         }

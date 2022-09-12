@@ -1,3 +1,4 @@
+// Desktop
 @media screen and (min-width: 850px) {
   .icon {
     width: 2.5rem;
@@ -16,7 +17,7 @@
     margin-right: 5rem;
   }
 
-  #footer__page-load-stats {
+  .footer__page-load-stats {
     font-size: medium;
   }
 
@@ -32,8 +33,13 @@
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
   }
+
+  .main__code-snippet {
+    //overflow-x: auto;
+  }
 }
 
+// Tablets
 @media screen and (max-width: 850px) {
   .icon {
     width: 1.5rem;
@@ -56,11 +62,11 @@
     font-size: small;
   }
 
-  #footer__page-load-stats {
+  .footer__page-load-stats {
     font-size: smaller;
   }
 
-  #footer__creds {
+  .footer__creds {
     font-size: medium;
   }
 
@@ -79,18 +85,20 @@
   }
 
   .main__code-snippet {
+    font-size: small!important;
     padding: 1rem!important;
     max-width: 70vw!important;
-    overflow-x: scroll;
+    //overflow-x: scroll;
   }
 }
 
+// Mobiles
 @media screen and (orientation: portrait) and (max-width: 500px) {
-  #footer__page-load-stats {
+  .footer__page-load-stats {
     font-size: x-small;
   }
 
-  #footer__creds {
+  .footer__creds {
     font-size: small;
   }
 
@@ -121,8 +129,8 @@
   }
 
   .main__code-snippet {
-    font-size: smaller;
-    overflow-x: scroll;
+    font-size: x-small!important;
+    //overflow-x: scroll;
   }
 
   .custom-button {

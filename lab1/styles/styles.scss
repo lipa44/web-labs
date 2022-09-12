@@ -5,11 +5,7 @@
 //  border: #666666 dashed;
 //}
 
-body {
-  margin: 0;
-}
-
-#main__ascii-art {
+.main__ascii-art {
   display: flex;
   justify-content: center;
   white-space: pre;
@@ -17,6 +13,7 @@ body {
 }
 
 .wrapper {
+  background: $background-color;
   display: grid;
   grid-template-columns: repeat(10, [col-start] 1fr);
   grid-template-rows: repeat(20, [row-start] 5vh);
@@ -52,7 +49,7 @@ body {
   align-items: center;
   margin: 1rem 3rem;
   border-radius: $smaller-radius;
-  background: $background-grey;
+  background: $primary-color;
 }
 
 .form-control {
@@ -60,7 +57,7 @@ body {
   width: 60%;
   line-height: 1.5;
   font-family: 'M PLUS 1 Code', sans-serif;
-  background-color: $background-grey;
+  background-color: $primary-color;
   border: 1px solid #ced4da;
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   padding: 0.5rem 1rem;
@@ -99,7 +96,7 @@ body {
   }
 }
 
-#footer__creds {
+.footer__creds {
   margin-right: 2rem;
   white-space: nowrap;
 }
@@ -131,7 +128,7 @@ body {
   background-color: #eee;
   border: 1px solid #999;
   display: block;
-  padding: 2rem;
+  padding: 2rem 1rem;
   border-radius: $smaller-radius;
 
   & b {
@@ -139,7 +136,7 @@ body {
   }
 }
 
-#home-btn {
+.home-btn {
   display: flex;
 
   &:hover {
@@ -147,13 +144,13 @@ body {
   }
 }
 
-#main__code-snippet {
-  background-color: $background-grey;
+.main__code-snippet {
+  background-color: $primary-color;
   border: 1px solid #999;
   padding: 2rem;
   font-size: medium;
   border-radius: $smaller-radius;
-  overflow: scroll;
+  overflow: auto;
   box-shadow: $gray-shadow;
   white-space: pre;
   align-self: center;
