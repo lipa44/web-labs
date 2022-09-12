@@ -12,7 +12,7 @@
     margin-left: 5rem;
     margin-right: 5rem;
   }
-  #footer__page-load-stats {
+  .footer__page-load-stats {
     font-size: medium;
   }
   .container > h2 {
@@ -43,10 +43,10 @@
   .container > h2 {
     font-size: small;
   }
-  #footer__page-load-stats {
+  .footer__page-load-stats {
     font-size: smaller;
   }
-  #footer__creds {
+  .footer__creds {
     font-size: medium;
   }
   .main__ascii-art {
@@ -67,10 +67,10 @@
   }
 }
 @media screen and (orientation: portrait) and (max-width: 500px) {
-  #footer__page-load-stats {
+  .footer__page-load-stats {
     font-size: x-small;
   }
-  #footer__creds {
+  .footer__creds {
     font-size: small;
   }
   .container > h2 {

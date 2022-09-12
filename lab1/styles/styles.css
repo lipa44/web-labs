@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+1+Code&display=swap");
-body {
-  margin: 0;
-}
-
-#main__ascii-art {
+.main__ascii-art {
   display: flex;
   justify-content: center;
   white-space: pre;
@@ -91,7 +87,7 @@ body {
   opacity: 0.5;
 }
 
-#footer__creds {
+.footer__creds {
   margin-right: 2rem;
   white-space: nowrap;
 }
@@ -130,14 +126,14 @@ body {
   text-decoration: line-through;
 }
 
-#home-btn {
+.home-btn {
   display: flex;
 }
-#home-btn:hover {
+.home-btn:hover {
   opacity: 0.7;
 }
 
-#main__code-snippet {
+.main__code-snippet {
   background-color: rgba(199, 199, 199, 0.3);
   border: 1px solid #999;
   padding: 2rem;
