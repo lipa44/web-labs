@@ -51,7 +51,7 @@
   }
   .main__ascii-art {
     font-size: 3px;
-    overflow-x: scroll;
+    overflow-x: auto;
   }
   .header__search-bar {
     display: none;
@@ -87,8 +87,9 @@
     margin-right: 2rem;
   }
   .main__ascii-art {
-    font-size: 3px;
-    overflow-x: scroll;
+    font-size: 2px;
+    justify-content: flex-start;
+    overflow-x: auto;
   }
   .header__search-bar {
     display: none;

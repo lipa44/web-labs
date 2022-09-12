@@ -33,10 +33,6 @@
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
   }
-
-  .main__code-snippet {
-    //overflow-x: auto;
-  }
 }
 
 // Tablets
@@ -72,7 +68,7 @@
 
   .main__ascii-art {
     font-size: 3px;
-    overflow-x: scroll;
+    overflow-x: auto;
   }
 
   .header__search-bar {
@@ -88,7 +84,6 @@
     font-size: small!important;
     padding: 1rem!important;
     max-width: 70vw!important;
-    //overflow-x: scroll;
   }
 }
 
@@ -120,8 +115,9 @@
   }
 
   .main__ascii-art {
-    font-size: 3px;
-    overflow-x: scroll;
+    font-size: 2px;
+    justify-content: flex-start;
+    overflow-x: auto;
   }
 
   .header__search-bar {
@@ -130,7 +126,6 @@
 
   .main__code-snippet {
     font-size: x-small!important;
-    //overflow-x: scroll;
   }
 
   .custom-button {
