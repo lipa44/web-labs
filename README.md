@@ -21,3 +21,6 @@
 2. lab-5
 2. lab-6
 2. lab-7
+
+
+> Макет можно найти [тут](https://www.figma.com/file/EhHjMSYBQ4xSgbygUO2b65/lab-1?node-id=0%3A1)
