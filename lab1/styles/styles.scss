@@ -75,6 +75,7 @@
 
 .custom-button {
   display: flex;
+  color: black;
   white-space: nowrap;
   padding: 0.375rem 0.75rem;
   margin: 0 0.5rem;
@@ -126,13 +127,10 @@
   white-space: nowrap;
   background-color: #eee;
   border: 1px solid #999;
-  display: block;
+  display: inline-block;
   padding: 2rem 1rem;
   border-radius: $smaller-radius;
-
-  & b {
-    text-decoration: line-through;
-  }
+  margin: 0 auto;
 }
 
 .home-btn {
