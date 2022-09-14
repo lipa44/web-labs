@@ -116,13 +116,13 @@
 }
 
 .main__body-mock {
+  font-family: "M PLUS 1 Code", sans-serif;
   white-space: nowrap;
   background-color: #eee;
   border: 1px solid #999;
   display: inline-block;
   padding: 2rem 1rem;
   border-radius: 1rem;
-  margin: 0 auto;
 }
 
 .home-btn {

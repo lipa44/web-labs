@@ -81,6 +81,9 @@
   #main__intro {
     font-size: small;
   }
+  .main__body-mock {
+    font-size: x-small;
+  }
   .main {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -101,7 +104,7 @@
     font-size: small;
   }
 }
-@media screen and (orientation: portrait) and (max-width: 500px) {
+@media screen and (orientation: portrait) and (max-width: 350px) {
   .main__code-snippet {
     font-size: xx-small !important;
   }
