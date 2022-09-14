@@ -70,7 +70,6 @@
 .custom-button {
   display: flex;
   white-space: nowrap;
-  color: black;
   padding: 0.375rem 0.75rem;
   margin: 0 0.5rem;
   font-size: 1rem;
@@ -142,10 +141,13 @@
   border-radius: 1rem;
   overflow: auto;
   box-shadow: -0.5em 0 1em gray;
-  white-space: pre;
   align-self: center;
   display: flex;
-  max-width: 80vw;
+  margin: 1rem 0;
+}
+
+.code-snippet__code {
+  white-space: pre-wrap;
 }
 
 /*# sourceMappingURL=styles.css.map */
