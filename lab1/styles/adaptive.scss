@@ -81,9 +81,8 @@
   }
 
   .main__code-snippet {
-    font-size: small!important;
-    padding: 1rem!important;
-    max-width: 70vw!important;
+    font-size: small !important;
+    padding: 1rem !important;
   }
 }
 
@@ -109,6 +108,10 @@
     font-size: small;
   }
 
+  .main__body-mock {
+    font-size: x-small;
+  }
+
   .main {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -125,11 +128,17 @@
   }
 
   .main__code-snippet {
-    font-size: x-small!important;
+    font-size: x-small !important;
   }
 
   .custom-button {
     padding: 0.2rem 0.5rem;
     font-size: small;
+  }
+}
+
+@media screen and (orientation: portrait) and (max-width: 350px) {
+  .main__code-snippet {
+    font-size: xx-small !important;
   }
 }
