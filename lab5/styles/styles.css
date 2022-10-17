@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1+Code&display=swap");
+* {
+  font-family: CustomSansSerif, "Lucida Grande", Arial, sans-serif !important;
+}
+
+.title[placeholder]:empty:before {
+  content: attr(placeholder);
+  color: #999999;
+}
+
+address {
+  font-family: CustomSansSerif, "Lucida Grande", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  color: silver;
+  margin: 12px 0;
+  font-style: normal;
+}
+
+address[placeholder]:empty:before {
+  content: attr(placeholder);
+  color: #999999;
+}
+
+.editable[placeholder]:empty:before {
+  content: attr(placeholder);
+  color: #999999;
+}
+
+p, input {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 0 0 12px;
+  font-family: CustomSerif, Georgia, Cambria, "Times New Roman", serif !important;
+}
+p :focus, input :focus {
+  outline: none;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.58;
+}
+
+.aside {
+  position: fixed;
+  left: 50%;
+  top: 0;
+  right: 0;
+  margin: 46px 0 0 376px;
+}
+
+[contenteditable] {
+  outline: 0 solid transparent;
+}
+
+.main {
+  max-width: 732px !important;
+  margin: 2rem auto !important;
+}
+
+input:focus {
+  outline: none;
+}
+
+.custom-button {
+  color: black;
+  white-space: nowrap;
+  padding: 0.375rem 0.75rem;
+  margin: 1rem 0.5rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 1px solid;
+  cursor: pointer;
+  border-radius: 0.375rem;
+  background-color: transparent;
+  font-weight: bolder;
+}
+.custom-button a {
+  text-decoration: none;
+}
+.custom-button :hover {
+  opacity: 0.5;
+}
+
+/*# sourceMappingURL=styles.css.map */

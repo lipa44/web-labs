@@ -1,0 +1,12 @@
+@media screen and (max-width: 850px) {
+  .main {
+    margin: 2rem !important;
+  }
+}
+@media screen and (orientation: portrait) and (max-width: 500px) {
+  .main {
+    margin: 2rem 1rem !important;
+  }
+}
+
+/*# sourceMappingURL=adaptive.css.map */
