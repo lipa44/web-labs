@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code&display=swap');
-@import "../../lab1/styles/constants";
+@import "constants";
 
 * {
   //border: 0.1px dashed #666666;
-  font-family: CustomSansSerif, 'Lucida Grande', Arial, sans-serif !important;
+  font-family: $primary-font;
 }
 
 .title[placeholder]:empty:before {
   content: attr(placeholder);
-  color: #999999;
+  color: $primary-grey;
+  font-weight: lighter;
 }
 
 address {
-  font-family: CustomSansSerif,'Lucida Grande',Arial,sans-serif;
+  font-family: $primary-font;
   font-size: 15px;
   line-height: 18px;
   color: silver;
@@ -22,12 +22,12 @@ address {
 
 address[placeholder]:empty:before {
   content: attr(placeholder);
-  color: #999999;
+  color: $primary-grey;
 }
 
 .editable[placeholder]:empty:before {
   content: attr(placeholder);
-  color: #999999;
+  color: $primary-grey;
 }
 
 p, input {

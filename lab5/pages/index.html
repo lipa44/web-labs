@@ -29,7 +29,7 @@
         <address placeholder="Your name" contentEditable></address>
 
         <article class="editor">
-            <p class="editable" onkeydown="enterKey(event)" onmouseup="console.log(document.getSelection())"
+            <p class="editable"
                placeholder="Your story..."
                contentEditable></p>
         </article>
@@ -37,8 +37,8 @@
 
     <template><span id="control"></span></template>
 
-    <script src="../scripts/onNewLineSubmit.js"></script>
-    <script src="../scripts/onRowClick.js"></script>
-    <script src="../scripts/onTextSelect.js"></script>
+    <!--Scripts-->
+    <script type="module" src="../scripts/onPageLoad.js"></script>
+    <script type="module" src="../scripts/onTextSelect.js"></script>
 </body>
 </html>

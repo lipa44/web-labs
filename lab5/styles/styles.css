@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+1+Code&display=swap");
 * {
-  font-family: CustomSansSerif, "Lucida Grande", Arial, sans-serif !important;
+  font-family: "Lucida Grande", Arial, sans-serif;
 }
 
 .title[placeholder]:empty:before {
   content: attr(placeholder);
   color: #999999;
+  font-weight: lighter;
 }
 
 address {
-  font-family: CustomSansSerif, "Lucida Grande", Arial, sans-serif;
+  font-family: "Lucida Grande", Arial, sans-serif;
   font-size: 15px;
   line-height: 18px;
   color: silver;
