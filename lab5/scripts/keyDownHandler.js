@@ -12,14 +12,14 @@ const keyDownHandler = (e) => {
     const curNodeIndex = [...curParagraph.childNodes].indexOf(selection.focusNode);
 
     switch (e.keyCode) {
-        case Keys.ENTER:
+        case Keys.ENTER: // создаём новый параграф
             if (!e.shiftKey) {
                 handleEnter(e, curParagraph, keyDownHandler)
             }
 
             break;
 
-        case Keys.BACK_SPACE:
+        case Keys.BACK_SPACE: // удаляем параграф
             handleBackspace(e, curParagraph, isLineStart, selection);
             break;
 
