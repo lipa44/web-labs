@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+1+Code&display=swap");
 * {
-  font-family: "Lucida Grande", Arial, sans-serif;
+  font-family: CustomSansSerif, "Lucida Grande", Arial, sans-serif !important;
 }
 
 .title[placeholder]:empty:before {
@@ -10,7 +10,7 @@
 }
 
 address {
-  font-family: "Lucida Grande", Arial, sans-serif;
+  font-family: CustomSansSerif, "Lucida Grande", Arial, sans-serif;
   font-size: 15px;
   line-height: 18px;
   color: silver;
