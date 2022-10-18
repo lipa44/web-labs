@@ -21,7 +21,6 @@ const keyDownHandler = (e) => {
 
         case Keys.BACK_SPACE:
             handleBackspace(e, curParagraph, isLineStart, selection);
-
             break;
 
         case Keys.DOWN_ARROW: // переходим на нижний параграф

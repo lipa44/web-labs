@@ -2,7 +2,7 @@ const handleEnter = (e, curParagraph, handler) => {
     e.preventDefault();
 
     // has next paragraph
-    if (curParagraph.nextElementSibling) {
+    if (hasNextElem(curParagraph)) {
     }
 
     createEmptyParagraph(e, handler)
@@ -10,16 +10,17 @@ const handleEnter = (e, curParagraph, handler) => {
 
 const handleBackspace = (e, curParagraph, isLineStart, selection) => {
     if (curParagraph.innerText && curParagraph.innerText !== '\n') return; // если есть текст в параграфе
-    if (!curParagraph.previousElementSibling) return;
+    if (!hasPrevElem(curParagraph)) return;
 
     e.preventDefault();
 
     const article = curParagraph.parentNode;
     const parentParagraph = curParagraph.previousElementSibling;
+    const parentFirstChild = [...parentParagraph.childNodes].at(0) ?? parentParagraph
 
-    const parentFocusOffset = parentParagraph.textContent.length;
+    const parentFocusOffset = parentFirstChild.textContent.length;
 
-    setCaret(selection, parentParagraph, [...parentParagraph.childNodes].at(0), isLineStart, parentFocusOffset)
+    setCaret(selection, parentParagraph, parentFirstChild, isLineStart, parentFocusOffset)
 
     article.removeChild(curParagraph);
 
@@ -27,17 +28,13 @@ const handleBackspace = (e, curParagraph, isLineStart, selection) => {
 }
 
 const handleUpArrow = (e, curParagraph, curNodeIndex, focusOffset, isLineStart, selection) => {
-    if (!curParagraph.previousElementSibling) return;
-    // если у нас несколько строк в одном параграфе И мы находимся не на начале строки И текущий элемент - не первый в параграфе
-    if (curParagraph.childNodes.length !== 1 && curNodeIndex !== 0) return;
-    // если у нас несколько элементов, и мы находимся на первом, то мы идём дальше
-    // если у нас несколько элементов, и мы не на первом, то ретёрн
+    if (!hasPrevElem(curParagraph)) return;
+    if (hasChildren(curParagraph) && !isFirstLineInParagraph(curNodeIndex)) return;
 
     e.preventDefault();
 
     const prevParagraph = curParagraph.previousElementSibling;
-
-    const prevLastChild = [...prevParagraph.childNodes].at(-1)
+    const prevLastChild = [...prevParagraph.childNodes].at(-1) ?? prevParagraph
 
     const prevFocusOffset = prevLastChild.textContent.length > focusOffset
         ? focusOffset
@@ -47,16 +44,13 @@ const handleUpArrow = (e, curParagraph, curNodeIndex, focusOffset, isLineStart, 
 }
 
 const handleDownArrow = (e, curParagraph, curNodeIndex, focusOffset, isLineStart, selection) => {
-    if (!curParagraph.nextElementSibling) return;
-    // если у нас несколько строк в одном параграфе И мы находимся не на конце строки И текущий элемент - не последний в параграфе
-    if (curParagraph.childNodes.length !== 1 && curNodeIndex !== curParagraph.childNodes.length - 1) return;
-    // если у нас несколько элементов, и мы находимся на последнем, то мы идём дальше
-    // если у нас несколько элементов, и мы не на последнем, то ретёрн
+    if (!hasNextElem(curParagraph)) return;
+    if (hasChildren(curParagraph) && !isLastLineInParagraph(curParagraph, curNodeIndex)) return;
 
     e.preventDefault();
 
     const nextParagraph = curParagraph.nextElementSibling;
-    const nextFirstChild = [...nextParagraph.childNodes].at(0)
+    const nextFirstChild = [...nextParagraph.childNodes].at(0) ?? nextParagraph
 
     const nextFocusOffset = nextFirstChild.textContent.length > focusOffset
         ? focusOffset
@@ -92,5 +86,11 @@ const setCaret = (selection, node, startNode, collapse, offset) => {
 
     node.focus();
 }
+
+const hasChildren = (curParagraph) => curParagraph.childNodes.length > 1;
+const hasPrevElem = (curParagraph) => curParagraph.previousElementSibling;
+const hasNextElem = (curParagraph) => curParagraph.nextElementSibling;
+const isLastLineInParagraph = (curParagraph, curNodeIndex) => curNodeIndex === curParagraph.childNodes.length - 1;
+const isFirstLineInParagraph = (curNodeIndex) => curNodeIndex === 0;
 
 export {handleEnter, handleBackspace, handleUpArrow, handleDownArrow};
