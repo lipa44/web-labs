@@ -8,6 +8,12 @@ const handleEnter = (e, curParagraph, handler) => {
     createEmptyParagraph(e, handler)
 }
 
+const handleShiftEnter = (e, curParagraph, selection) => {
+    e.preventDefault();
+
+    createNewEmptyLine(e, selection)
+}
+
 const handleBackspace = (e, curParagraph, isLineStart, selection) => {
     if (curParagraph.innerText && curParagraph.innerText !== '\n') return; // если есть текст в параграфе
     if (!hasPrevElem(curParagraph)) return;
@@ -20,7 +26,7 @@ const handleBackspace = (e, curParagraph, isLineStart, selection) => {
 
     const parentFocusOffset = parentFirstChild.textContent.length;
 
-    setCaret(selection, parentParagraph, parentFirstChild, isLineStart, parentFocusOffset)
+    setCaret(selection, parentParagraph, parentFirstChild, parentFocusOffset)
 
     article.removeChild(curParagraph);
 
@@ -40,7 +46,7 @@ const handleUpArrow = (e, curParagraph, curNodeIndex, focusOffset, isLineStart, 
         ? focusOffset
         : prevLastChild.textContent.length;
 
-    setCaret(selection, prevParagraph, prevLastChild, isLineStart, prevFocusOffset)
+    setCaret(selection, prevParagraph, prevLastChild, prevFocusOffset)
 }
 
 const handleDownArrow = (e, curParagraph, curNodeIndex, focusOffset, isLineStart, selection) => {
@@ -56,7 +62,7 @@ const handleDownArrow = (e, curParagraph, curNodeIndex, focusOffset, isLineStart
         ? focusOffset
         : nextFirstChild.textContent.length;
 
-    setCaret(selection, nextParagraph, nextFirstChild, isLineStart, nextFocusOffset)
+    setCaret(selection, nextParagraph, nextFirstChild, nextFocusOffset)
 }
 
 const createEmptyParagraph = (e, handler) => {
@@ -74,7 +80,18 @@ const createEmptyParagraph = (e, handler) => {
     // window.localStorage.setItem("template", document.getElementsByClassName('main')[0].innerHTML);
 }
 
-const setCaret = (selection, node, startNode, collapse, offset) => {
+const createNewEmptyLine = (e, selection) => {
+    const curParagraph = e.target;
+
+    const breakLine = document.createElement("br");
+    const blankLine = document.createTextNode(" ");
+
+    curParagraph.append(breakLine, blankLine)
+
+    setCaret(selection, curParagraph, blankLine, 0)
+}
+
+const setCaret = (selection, node, startNode, offset) => {
     const range = document.createRange();
 
     selection.removeAllRanges();
@@ -93,4 +110,4 @@ const hasNextElem = (curParagraph) => curParagraph.nextElementSibling;
 const isLastLineInParagraph = (curParagraph, curNodeIndex) => curNodeIndex === curParagraph.childNodes.length - 1;
 const isFirstLineInParagraph = (curNodeIndex) => curNodeIndex === 0;
 
-export {handleEnter, handleBackspace, handleUpArrow, handleDownArrow};
+export {handleEnter, handleShiftEnter, handleBackspace, handleUpArrow, handleDownArrow};

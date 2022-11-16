@@ -1,4 +1,4 @@
-import {handleBackspace, handleDownArrow, handleEnter, handleUpArrow} from "./keyHandlers.js";
+import {handleBackspace, handleDownArrow, handleEnter, handleShiftEnter, handleUpArrow} from "./keyHandlers.js";
 
 const Keys = {ENTER: 13, BACK_SPACE: 8, LEFT_ARROW: 37, UP_ARROW: 38, RIGHT_ARROW: 39, DOWN_ARROW: 40};
 
@@ -12,8 +12,11 @@ const keyDownHandler = (e) => {
     const curNodeIndex = [...curParagraph.childNodes].indexOf(selection.focusNode);
 
     switch (e.keyCode) {
-        case Keys.ENTER: // создаём новый параграф
-            if (!e.shiftKey) {
+        case Keys.ENTER: // создаём новый параграф или новую строчку в нём
+            if (e.shiftKey) {
+                handleShiftEnter(e, curParagraph, selection)
+            }
+            else {
                 handleEnter(e, curParagraph, keyDownHandler)
             }
 
