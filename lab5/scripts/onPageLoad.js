@@ -19,8 +19,23 @@ const addCopyHandler = () => {
     })
 }
 
+const addCutHandler = () => {
+    const editableElements = document.querySelectorAll('[contenteditable]')
+
+    editableElements.forEach(elem => {
+        elem.addEventListener('cut', (e) => {
+            e.clipboardData.setData('text/plain', e.target.innerText);
+
+            e.target.innerText = ""
+
+            e.preventDefault();
+        })
+    })
+}
+
 (() => {
     addKeyDownHandler()
     addTemplate()
     addCopyHandler()
+    addCutHandler()
 })()
