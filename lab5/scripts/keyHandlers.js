@@ -22,11 +22,11 @@ const handleBackspace = (e, curParagraph, isLineStart, selection) => {
 
     const article = curParagraph.parentNode;
     const parentParagraph = curParagraph.previousElementSibling;
-    const parentLastChild = [...parentParagraph.childNodes].at(-1) ?? parentParagraph
+    const parentFirstChild = [...parentParagraph.childNodes].at(0) ?? parentParagraph
 
-    const parentFocusOffset = parentLastChild.textContent.length;
+    const parentFocusOffset = parentFirstChild.textContent.length;
 
-    setCaret(selection, parentParagraph, parentLastChild, parentFocusOffset)
+    setCaret(selection, parentParagraph, parentFirstChild, parentFocusOffset)
 
     article.removeChild(curParagraph);
 }
