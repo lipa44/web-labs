@@ -1,13 +1,19 @@
+import {Spinner} from "../node_modules/spin.js/spin.js"
+
 const loadTemplate = () => {
     const template = localStorage.getItem("template");
 
     if (!template) return;
 
     const main = document.querySelector('main');
+    const spinner = new Spinner({color:'#6b6b6b', lines: 12, animation: 'spinner-line-fade-quick'});
+
+    spinner.spin(main)
 
     let templateHTML = stringToHTML(template)
-
     main.replaceChildren(...templateHTML.childNodes)
+
+    spinner.stop(main)
 }
 
 const debounce = (func, wait, immediate) => {
