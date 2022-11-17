@@ -29,8 +29,6 @@ const handleBackspace = (e, curParagraph, isLineStart, selection) => {
     setCaret(selection, parentParagraph, parentFirstChild, parentFocusOffset)
 
     article.removeChild(curParagraph);
-
-    // window.localStorage.setItem("template", document.getElementsByClassName('main')[0].innerHTML);
 }
 
 const handleUpArrow = (e, curParagraph, curNodeIndex, focusOffset, isLineStart, selection) => {

@@ -1,9 +1,19 @@
 import {keyDownHandler} from "./keyDownHandler.js";
-import {loadTemplate} from "./loadTemplate.js";
+import {loadTemplate, debounce} from "./loadTemplate.js";
 
 const addKeyDownHandler = () => {
-    const p = document.querySelector('p');
-    p.addEventListener('keydown', (e) => keyDownHandler(e))
+    const p = document.getElementsByTagName('p')
+    for (let i = 0; i < p.length; i++) {
+        p[i].addEventListener('keydown', (e) => keyDownHandler(e))
+    }
+}
+
+const addArticleUpdateHandler = () => {
+    const article = document.querySelector('main');
+    article.addEventListener(
+        'input',
+        debounce(() => localStorage.setItem("template", article.innerHTML), 1500)
+    )
 }
 
 const addTemplate = () => loadTemplate();
@@ -34,8 +44,9 @@ const addCutHandler = () => {
 }
 
 (() => {
-    addKeyDownHandler()
     addTemplate()
+    addKeyDownHandler()
     addCopyHandler()
     addCutHandler()
+    addArticleUpdateHandler()
 })()

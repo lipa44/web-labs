@@ -1,13 +1,36 @@
 const loadTemplate = () => {
-    const template = window.localStorage.getItem("template");
-
-    console.log("Loading template")
+    const template = localStorage.getItem("template");
 
     if (!template) return;
 
-    const main = document.getElementsByClassName('main')[0];
+    const main = document.querySelector('main');
 
-    main.innerHTML = template;
+    let templateHTML = stringToHTML(template)
+
+    main.replaceChildren(...templateHTML.childNodes)
 }
 
-export {loadTemplate}
+const debounce = (func, wait, immediate) => {
+    let timeout;
+    return function() {
+        const context = this, args = arguments;
+        const later = function() {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+        };
+
+        const callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+
+        if (callNow) func.apply(context, args);
+    };
+}
+
+const stringToHTML = (str) => {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(str, 'text/html');
+    return doc.body;
+};
+
+export {loadTemplate, debounce}
