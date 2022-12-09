@@ -21,28 +21,23 @@
     <link rel="stylesheet" type="text/css" href="../../lab1/styles/global.css">
     <link rel="stylesheet" type="text/css" href="../../lab1/styles/layout.css">
     <link rel="stylesheet" type="text/css" href="../../lab1/styles/normalize.css">
-
-    <!--  Spin.js library  -->
-    <link rel="stylesheet" type="text/css" href="../node_modules/spin.js/spin.css">
 </head>
 <body>
-    <main class="main">
-        <h1 class="title" placeholder="Title" contentEditable></h1>
-        <address placeholder="Your name" contentEditable></address>
+    <div class="wrap-container">
+        <main class="main">
+            <h1 class="title" placeholder="Title" contentEditable></h1>
+            <address placeholder="Your name" contentEditable></address>
 
-        <article class="editor">
-            <p class="editable"
-               placeholder="Your story..."
-               contentEditable
-            ></p>
-        </article>
-    </main>
-
+            <article class="editor">
+                <p class="editable"
+                   placeholder="Your story..."
+                   contentEditable
+                ></p>
+            </article>
+        </main>
+    </div>
     <template><span id="control"></span></template>
 
-    <!--Scripts-->
-    <script type="module" src="../scripts/onPageLoad.js"></script>
-    <script type="module" src="../scripts/onTextSelect.js"></script>
-<!--    <script type="module" src="../../node_modules/spin.js/spin.js"></script>-->
+    <script src="../../build/index.bundle.js"></script>
 </body>
 </html>
