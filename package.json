@@ -4,16 +4,28 @@
   "description": "My web labs",
   "main": "lab5/pages/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lipa44/web-labs.git"
   },
   "author": "lipa",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/lipa44/web-labs/issues"
   },
-  "homepage": "https://github.com/lipa44/web-labs#readme"
+  "homepage": "https://github.com/lipa44/web-labs#readme",
+  "keywords": [
+    "js",
+    "css",
+    "html"
+  ],
+  "dependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "random-picture": "^4.0.6",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
 }

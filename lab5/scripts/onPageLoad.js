@@ -1,5 +1,6 @@
 import {keyDownHandler} from "./keyDownHandler.js";
 import {loadTemplate, debounce} from "./loadTemplate.js";
+import {loadRandomBackground} from "./backgroundLoader";
 
 const addKeyDownHandler = () => {
     const p = document.getElementsByTagName('p')
@@ -17,26 +18,14 @@ const addArticleUpdateHandler = () => {
 }
 
 const addTemplate = () => loadTemplate();
+const addBackgroundImage = () => loadRandomBackground();
 
 const addCopyHandler = () => {
     const editableElements = document.querySelectorAll('[contenteditable]')
 
     editableElements.forEach(elem => {
         elem.addEventListener('copy', (e) => {
-            e.clipboardData.setData('text/plain', e.target.innerText);
-            e.preventDefault();
-        })
-    })
-}
 
-const addCutHandler = () => {
-    const editableElements = document.querySelectorAll('[contenteditable]')
-
-    editableElements.forEach(elem => {
-        elem.addEventListener('cut', (e) => {
-            e.clipboardData.setData('text/plain', e.target.innerText);
-
-            e.target.innerText = ""
 
             e.preventDefault();
         })
@@ -45,8 +34,8 @@ const addCutHandler = () => {
 
 (() => {
     addTemplate()
+    addBackgroundImage()
     addKeyDownHandler()
     addCopyHandler()
-    addCutHandler()
     addArticleUpdateHandler()
 })()

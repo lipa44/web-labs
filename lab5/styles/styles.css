@@ -42,6 +42,23 @@ p {
   line-height: 1.58;
 }
 
+.wrap-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.bg-image {
+  z-index: -100;
+  opacity: 0.4;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.demo-content {
+  position: relative;
+}
+
 .aside {
   position: fixed;
   left: 50%;
